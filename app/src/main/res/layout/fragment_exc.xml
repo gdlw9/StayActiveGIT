@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExcFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="205dp"
+            android:layout_height="163dp"
+            android:contentDescription="@string/open_a_back_exercises"
+            android:contextClickable="true"
+            android:src="@drawable/ba"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="195dp"
+            android:layout_height="163dp"
+            android:contentDescription="@string/open_a_chest_exercises"
+            android:contextClickable="true"
+            android:src="@drawable/ch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="205dp"
+            android:layout_height="163dp"
+            android:contentDescription="@string/open_a_biceps_exercises"
+            android:contextClickable="true"
+            android:src="@drawable/bi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="195dp"
+            android:layout_height="163dp"
+            android:contentDescription="@string/open_an_arms_exercises"
+            android:contextClickable="true"
+            android:src="@drawable/bar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="205dp"
+            android:layout_height="163dp"
+            android:contentDescription="@string/open_a_triceps_exercises"
+            android:contextClickable="true"
+            android:src="@drawable/brz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="195dp"
+            android:layout_height="163dp"
+            android:contentDescription="@string/open_an_abdominal_exercises"
+            android:contextClickable="true"
+            android:src="@drawable/tr"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:contentDescription="@string/open_a_legs_exercises"
+            android:contextClickable="true"
+            android:src="@drawable/no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/plecy"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#454545"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintStart_toStartOf="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/biceps"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#454545"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+            app:layout_constraintStart_toStartOf="@+id/imageButton4"
+            app:layout_constraintTop_toTopOf="@+id/imageButton4" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/brzuch"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#454545"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageButton6"
+            app:layout_constraintTop_toTopOf="@+id/imageButton6" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/klatka_piersiowa"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#454545"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/barki"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#454545"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+            app:layout_constraintStart_toStartOf="@+id/imageButton3"
+            app:layout_constraintTop_toTopOf="@+id/imageButton3" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/triceps"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#454545"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+            app:layout_constraintStart_toStartOf="@+id/imageButton5"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/nogi"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#454545"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageButton7" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

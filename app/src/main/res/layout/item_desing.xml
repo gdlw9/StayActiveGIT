@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout"
+        android:background="@drawable/grad">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:id="@+id/tv_title"
+            android:background="@drawable/sn"
+            android:padding="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tommyt"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/rl_title_line"
+            android:background="@color/underline_col">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_img1"
+            android:layout_gravity="center"
+            >
+
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_img2"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="25dp">
+
+
+        </ImageView>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tv_working_mscl"
+            android:id="@+id/tv_w_mscl"
+            android:background="@drawable/grad"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tommyt"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:id="@+id/tv_desc"
+            android:background="@drawable/grad"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tommyt"
+            android:textColor="@color/white">
+
+
+        </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/rl_desc_line"
+            android:background="@color/underline_col">
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    NavigationBarView.LABEL_VISIBILITY_LABELED
+    <item
+        android:id="@+id/exc"
+        android:icon="@drawable/sport"
+        android:title="Ćwiczenia" />
+    <item
+        android:id="@+id/plans"
+        android:icon="@drawable/note"
+        android:title="Plany" />
+
+    <item
+        android:id="@+id/bests"
+        android:icon="@drawable/bests"
+        android:title="Rekordy" />
+    <item
+        android:id="@+id/body"
+        android:icon="@drawable/star"
+        android:title="Pomiary" />
+</menu>

@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">StayActive</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_a_chest_exercises">Open a chest exercises</string>
+    <string name="open_an_arms_exercises">Open an arms exercises</string>
+    <string name="open_a_biceps_exercises">Open a biceps exercises</string>
+    <string name="open_a_back_exercises">Open a back exercises</string>
+    <string name="open_an_abdominal_exercises">Open an abdominal exercises</string>
+    <string name="open_a_triceps_exercises">Open a triceps exercises</string>
+    <string name="open_a_legs_exercises">Open a legs exercises</string>
+    <string name="klatka_piersiowa">KLATKA PIERSIOWA</string>
+    <string name="plecy">PLECY</string>
+    <string name="biceps">BICEPS</string>
+    <string name="nogi">NOGI</string>
+    <string name="brzuch">BRZUCH</string>
+    <string name="barki">BARKI</string>
+    <string name="triceps">TRICEPS</string>
 </resources>
