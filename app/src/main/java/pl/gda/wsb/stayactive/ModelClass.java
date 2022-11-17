@@ -33,13 +33,6 @@ public class ModelClass {
         this.imageView1 = imageView1;
     }
 
-    public int getImageView2() {
-        return imageView2;
-    }
-
-    public void setImageView2(int imageView2) {
-        this.imageView2 = imageView2;
-    }
 
     public boolean isVisible() {
         return isVisible;
@@ -50,16 +43,16 @@ public class ModelClass {
     }
 
     String exercise,working_muscles,description;
-    int imageView1,imageView2;
+    int imageView1;
     boolean isVisible;
 
 
-    public ModelClass(String exercise, String working_muscles, String description, int imageView1, int imageView2, boolean isVisible) {
+    public ModelClass(String exercise, String working_muscles, String description, int imageView1, boolean isVisible) {
         this.exercise = exercise;
         this.working_muscles = working_muscles;
         this.description = description;
         this.imageView1 = imageView1;
-        this.imageView2 = imageView2;
+
         this.isVisible = false;
     }
 }

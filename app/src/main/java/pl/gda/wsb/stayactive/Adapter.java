@@ -37,13 +37,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         ModelClass modelClass = arrayList.get(position);
         holder.tv_title.setText(modelClass.getExercise());
         holder.iv_img1.setImageResource(modelClass.getImageView1());
-        holder.iv_img2.setImageResource(modelClass.getImageView2());
         holder.tv_working_muscles.setText(modelClass.getWorking_muscles());
         holder.tv_desc.setText(modelClass.getDescription());
 
         boolean isVisible = arrayList.get(position).isVisible();
         holder.iv_img1.setVisibility(isVisible ? View.VISIBLE : View.GONE);
-        holder.iv_img2.setVisibility(isVisible ? View.VISIBLE : View.GONE);
         holder.tv_working_muscles.setVisibility(isVisible ? View.VISIBLE : View.GONE);
         holder.tv_desc.setVisibility(isVisible ? View.VISIBLE : View.GONE);
         holder.rl_desc.setVisibility(isVisible ? View.VISIBLE : View.GONE);
@@ -60,14 +58,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         TextView tv_title,tv_working_muscles,tv_desc;
         RelativeLayout rl_title_line,rl_desc;
         LinearLayout linearLayout;
-        ImageView iv_img1,iv_img2;
+        ImageView iv_img1;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_title=itemView.findViewById(R.id.tv_title);
             rl_title_line=itemView.findViewById(R.id.rl_title_line);
             iv_img1=itemView.findViewById(R.id.iv_img1);
-            iv_img2=itemView.findViewById(R.id.iv_img2);
             tv_working_muscles=itemView.findViewById(R.id.tv_w_mscl);
             tv_desc=itemView.findViewById(R.id.tv_desc);
             rl_desc=itemView.findViewById(R.id.rl_desc_line);

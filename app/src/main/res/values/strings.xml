@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">StayActive</string>
+    <string name="legs_name">NOGI - lista ćwiczeń</string>
+    <string name="abdomen_name">BRZUCH - lista ćwiczeń</string>
+    <string name="triceps_name"> TRICEPS - lista ćwiczeń</string>
+    <string name="biceps_name"> BICPES - lista ćwiczeń</string>
+    <string name="arms_name"> BARKI - lista ćwiczeń</string>
+    <string name="back_name"> PLECY - lista ćwiczeń</string>
+    <string name="chest_name"> KLATKA PIERSIOWA - lista ćwiczeń</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open_a_chest_exercises">Open a chest exercises</string>
