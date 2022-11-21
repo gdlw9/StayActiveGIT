@@ -7,6 +7,10 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
+import pl.gda.wsb.stayactive.BOTTOM_NAV_FRAG.BestsFragment;
+import pl.gda.wsb.stayactive.BOTTOM_NAV_FRAG.BodyFragment;
+import pl.gda.wsb.stayactive.BOTTOM_NAV_FRAG.ExcFragment;
+import pl.gda.wsb.stayactive.BOTTOM_NAV_FRAG.PlansFragment;
 import pl.gda.wsb.stayactive.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

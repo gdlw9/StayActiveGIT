@@ -13,6 +13,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
+
 import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
@@ -29,19 +33,24 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(context).inflate(R.layout.item_desing,null,false);
-        return new ViewHolder(view);
+        ViewHolder viewHolder = new ViewHolder(view);
+        return viewHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
+        ViewHolder viewHolder = (ViewHolder) holder;
         ModelClass modelClass = arrayList.get(position);
+
         holder.tv_title.setText(modelClass.getExercise());
-        holder.iv_img1.setImageResource(modelClass.getImageView1());
+        Glide.with(holder.iv.getContext()).load(modelClass.getImage()).into(holder.iv);
         holder.tv_working_muscles.setText(modelClass.getWorking_muscles());
         holder.tv_desc.setText(modelClass.getDescription());
 
+
         boolean isVisible = arrayList.get(position).isVisible();
-        holder.iv_img1.setVisibility(isVisible ? View.VISIBLE : View.GONE);
+        holder.iv.setVisibility(isVisible ? View.VISIBLE : View.GONE);
         holder.tv_working_muscles.setVisibility(isVisible ? View.VISIBLE : View.GONE);
         holder.tv_desc.setVisibility(isVisible ? View.VISIBLE : View.GONE);
         holder.rl_desc.setVisibility(isVisible ? View.VISIBLE : View.GONE);
@@ -58,13 +67,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         TextView tv_title,tv_working_muscles,tv_desc;
         RelativeLayout rl_title_line,rl_desc;
         LinearLayout linearLayout;
-        ImageView iv_img1;
+        ImageView iv;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_title=itemView.findViewById(R.id.tv_title);
             rl_title_line=itemView.findViewById(R.id.rl_title_line);
-            iv_img1=itemView.findViewById(R.id.iv_img1);
+            iv=itemView.findViewById(R.id.iv);
             tv_working_muscles=itemView.findViewById(R.id.tv_w_mscl);
             tv_desc=itemView.findViewById(R.id.tv_desc);
             rl_desc=itemView.findViewById(R.id.rl_desc_line);

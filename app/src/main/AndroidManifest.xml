@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pl.gda.wsb.stayactive">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,33 +13,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StayActive">
         <activity
+            android:name=".PlansAdv"
+            android:exported="false"
+            android:label="@string/title_activity_plans_adv"
+            android:theme="@style/Theme.StayActive.NoActionBar" />
+        <activity
+            android:name=".PlansInter"
+            android:exported="false"
+            android:label="@string/title_activity_plans_inter"
+            android:theme="@style/Theme.StayActive.NoActionBar" />
+        <activity
+            android:name=".PlansBeginer"
+            android:exported="false"
+            android:label="@string/title_activity_plans_beginer"
+            android:theme="@style/Theme.StayActive.NoActionBar" />
+        <activity
             android:name=".Legs"
             android:exported="false"
-            android:label="@string/legs_name"/>
+            android:label="@string/legs_name" />
         <activity
             android:name=".Abdomen"
             android:exported="false"
-            android:label="@string/abdomen_name"/>
+            android:label="@string/abdomen_name" />
         <activity
             android:name=".Triceps"
             android:exported="false"
-            android:label="@string/triceps_name"/>
+            android:label="@string/triceps_name" />
         <activity
             android:name=".Biceps"
             android:exported="false"
-            android:label="@string/biceps_name"/>
+            android:label="@string/biceps_name" />
         <activity
             android:name=".Arms"
             android:exported="false"
-            android:label="@string/arms_name"/>
+            android:label="@string/arms_name" />
         <activity
             android:name=".Back"
             android:exported="false"
-            android:label="@string/back_name"/>
+            android:label="@string/back_name" />
         <activity
             android:name=".Chest"
             android:exported="false"
-            android:label="@string/chest_name"/>
+            android:label="@string/chest_name" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -48,6 +64,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

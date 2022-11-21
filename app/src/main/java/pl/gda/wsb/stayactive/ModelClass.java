@@ -1,6 +1,24 @@
 package pl.gda.wsb.stayactive;
 
+import android.widget.ImageView;
+
+import java.io.InputStream;
+
 public class ModelClass {
+
+    String exercise,working_muscles,description;
+    byte[] image;
+    boolean isVisible;
+
+
+    public ModelClass(String exercise, String working_muscles, String description, byte[] image, boolean isVisible) {
+        this.exercise = exercise;
+        this.working_muscles = working_muscles;
+        this.description = description;
+        this.image = image;
+        this.isVisible = false;
+    }
+
     public String getExercise() {
         return exercise;
     }
@@ -25,12 +43,13 @@ public class ModelClass {
         this.description = description;
     }
 
-    public int getImageView1() {
-        return imageView1;
+
+    public byte[] getImage() {
+        return image;
     }
 
-    public void setImageView1(int imageView1) {
-        this.imageView1 = imageView1;
+    public void setImage(byte[] imageView1) {
+        this.image = imageView1;
     }
 
 
@@ -42,17 +61,5 @@ public class ModelClass {
         isVisible = visible;
     }
 
-    String exercise,working_muscles,description;
-    int imageView1;
-    boolean isVisible;
 
-
-    public ModelClass(String exercise, String working_muscles, String description, int imageView1, boolean isVisible) {
-        this.exercise = exercise;
-        this.working_muscles = working_muscles;
-        this.description = description;
-        this.imageView1 = imageView1;
-
-        this.isVisible = false;
-    }
 }

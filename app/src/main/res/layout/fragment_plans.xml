@@ -1,17 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
-    tools:context=".PlansFragment">
+    android:background="@drawable/sn"
+    tools:context=".BOTTOM_NAV_FRAG.PlansFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:layout_gravity="center"
-        android:text="PlansFragment" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="360dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginRight="15dp"
+            android:contextClickable="true"
+            android:src="@drawable/pocz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/opens_beginner_exercise_list" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="360dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginRight="15dp"
+            android:contextClickable="true"
+            android:src="@drawable/sre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+            android:contentDescription="@string/opens_intermediate_exercise_list" />
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="360dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginRight="15dp"
+            android:contextClickable="true"
+            android:src="@drawable/zaaw"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+            android:contentDescription="@string/opens_advenced_exercise_list" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/trening_dla_pocz_tkuj_cych"
+            android:textColor="#eeff41"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton9"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton9"
+            app:layout_constraintStart_toStartOf="@+id/imageButton9"
+            app:layout_constraintTop_toTopOf="@+id/imageButton9" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/trening_dla_redniozaawansowanych"
+            android:textColor="#DD2C00"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton10"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton10"
+            app:layout_constraintStart_toStartOf="@+id/imageButton10"
+            app:layout_constraintTop_toTopOf="@+id/imageButton10" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/trening_dla_zaawansowanych"
+            android:textColor="#FFAB00"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton11"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton11"
+            app:layout_constraintStart_toStartOf="@+id/imageButton11"
+            app:layout_constraintTop_toTopOf="@+id/imageButton11" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

@@ -23,4 +23,24 @@
     <string name="brzuch">BRZUCH</string>
     <string name="barki">BARKI</string>
     <string name="triceps">TRICEPS</string>
+    <string name="opens_beginner_exercise_list">Opens beginner exercise list</string>
+    <string name="opens_intermediate_exercise_list">Opens intermediate exercise list</string>
+    <string name="opens_advenced_exercise_list">Opens advenced exercise list</string>
+    <string name="trening_dla_pocz_tkuj_cych">Trening dla początkujących</string>
+    <string name="trening_dla_redniozaawansowanych">Trening dla średniozaawansowanych</string>
+    <string name="trening_dla_zaawansowanych">Trening dla zaawansowanych</string>
+    <string name="title_activity_plan_b">PlanB</string>
+    <string name="tab_text_1">Dzień 1</string>
+    <string name="tab_text_2">Dzień 2</string>
+    <string name="tab_text_3">Dzień 3</string>
+    <string name="Atab_text_1">Dzień 1 (PUSH)</string>
+    <string name="Atab_text_2">Dzień 2 (PULL)</string>
+    <string name="Atab_text_3">Dzień 3 (PUSH)</string>
+    <string name="Atab_text_4">Dzień 4 (PULL)</string>
+    <string name="title_activity_plan_i">PlanI</string>
+    <string name="title_activity_plan">PlanA</string>
+    <string name="title_activity_plans_beginer">PlansBeginer</string>
+    <string name="title_activity_plans_inter">PlansInter</string>
+    <string name="title_activity_plans_adv">PlansAdv</string>
+    <string name="trenig_push_pull"><![CDATA[Trenig Push&Pull]]></string>
 </resources>
