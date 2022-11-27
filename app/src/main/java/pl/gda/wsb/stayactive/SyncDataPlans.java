@@ -2,6 +2,7 @@ package pl.gda.wsb.stayactive;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -18,7 +19,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class SyncDataPlans extends AsyncTask<String,String,String>
+public class SyncDataPlans extends AsyncTask<String,String,String> implements RecyclerViewInterface
 {
     private ArrayList<PlansModelClass> arrayList;
     private PlansAdapter adapter;
@@ -102,8 +103,45 @@ public class SyncDataPlans extends AsyncTask<String,String,String>
     protected void onPostExecute(String msg)
     {
         if(success) {
-            adapter=new PlansAdapter(arrayList,context);
+            adapter=new PlansAdapter(arrayList,context,this);
             recyclerView.setAdapter(adapter);
+        }
+
+    }
+    public void changeActivity(Class c){
+        Intent intent = new Intent(activity,c);
+
+        activity.startActivity(intent);
+    }
+
+    @Override
+    public void OnItemClick(int position) {
+        switch (arrayList.get(position).mscl){
+            case "Klatka piersiowa":
+                changeActivity(Chest.class);
+                break;
+            case "Plecy":
+                changeActivity(Back.class);
+                break;
+            case "Barki":
+                changeActivity(Arms.class);
+                break;
+            case "Biceps":
+                changeActivity(Biceps.class);
+                break;
+            case "Triceps":
+                changeActivity(Triceps.class);
+                break;
+            case "Brzuch":
+                changeActivity(Abdomen.class);
+                break;
+            case "Nogi":
+                changeActivity(Legs.class);
+                break;
+            default:
+                break;
+
+
         }
 
     }

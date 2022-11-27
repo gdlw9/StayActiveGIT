@@ -35,8 +35,9 @@
         </RelativeLayout>
 
         <ImageView
-            android:layout_width="360dp"
-            android:layout_height="360dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="@dimen/_210sdp"
+            android:layout_height="@dimen/_175sdp"
             android:id="@+id/iv"
             android:layout_gravity="center"
             >
