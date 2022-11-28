@@ -9,10 +9,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 
-import pl.gda.wsb.stayactive.PlansInter;
-import pl.gda.wsb.stayactive.PlansInterD1;
-import pl.gda.wsb.stayactive.PlansInterD2;
-import pl.gda.wsb.stayactive.PlansInterD3;
+import Plans.PlansInterD1;
+import Plans.PlansInterD2;
+import Plans.PlansInterD3;
 import pl.gda.wsb.stayactive.R;
 
 

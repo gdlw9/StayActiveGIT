@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlansInterD3"
+    tools:context="Plans.PlansInterD3"
     android:background="@drawable/sn">
 
 

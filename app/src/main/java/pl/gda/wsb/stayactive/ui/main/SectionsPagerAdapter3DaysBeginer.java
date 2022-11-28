@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import pl.gda.wsb.stayactive.PlansBeginerD1;
-import pl.gda.wsb.stayactive.PlansBeginerD2;
-import pl.gda.wsb.stayactive.PlansBeginerD3;
+import Plans.PlansBeginerD1;
+import Plans.PlansBeginerD2;
+import Plans.PlansBeginerD3;
 import pl.gda.wsb.stayactive.R;
 
 /**

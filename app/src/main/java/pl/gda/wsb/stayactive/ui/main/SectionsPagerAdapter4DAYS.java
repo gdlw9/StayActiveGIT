@@ -8,13 +8,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import pl.gda.wsb.stayactive.PlansAdvD1;
-import pl.gda.wsb.stayactive.PlansAdvD2;
-import pl.gda.wsb.stayactive.PlansAdvD3;
-import pl.gda.wsb.stayactive.PlansAdvD4;
-import pl.gda.wsb.stayactive.PlansInterD1;
-import pl.gda.wsb.stayactive.PlansInterD2;
-import pl.gda.wsb.stayactive.PlansInterD3;
+import Plans.PlansAdvD1;
+import Plans.PlansAdvD2;
+import Plans.PlansAdvD3;
+import Plans.PlansAdvD4;
 import pl.gda.wsb.stayactive.R;
 
 /**

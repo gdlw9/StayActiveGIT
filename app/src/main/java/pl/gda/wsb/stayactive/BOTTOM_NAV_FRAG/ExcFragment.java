@@ -6,18 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 
-import pl.gda.wsb.stayactive.Abdomen;
-import pl.gda.wsb.stayactive.Arms;
-import pl.gda.wsb.stayactive.Back;
-import pl.gda.wsb.stayactive.Biceps;
-import pl.gda.wsb.stayactive.Chest;
-import pl.gda.wsb.stayactive.Legs;
+import Exc.Abdomen;
+import Exc.Arms;
+import Exc.Back;
+import Exc.Biceps;
+import Exc.Chest;
+import Exc.Legs;
 import pl.gda.wsb.stayactive.R;
-import pl.gda.wsb.stayactive.Triceps;
+import Exc.Triceps;
 
 
 public class ExcFragment extends Fragment implements View.OnClickListener {

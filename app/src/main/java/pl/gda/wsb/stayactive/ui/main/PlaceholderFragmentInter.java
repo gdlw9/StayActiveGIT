@@ -13,6 +13,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import pl.gda.wsb.stayactive.databinding.FragmentPlansBeginerBinding;
+import pl.gda.wsb.stayactive.databinding.FragmentPlansInterBinding;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -22,7 +23,7 @@ public class PlaceholderFragmentInter extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
 
     private PageViewModel pageViewModel;
-    private FragmentPlansBeginerBinding binding;
+    private FragmentPlansInterBinding binding;
 
     public static PlaceholderFragmentInter newInstance(int index) {
         PlaceholderFragmentInter fragment = new PlaceholderFragmentInter();
@@ -48,16 +49,10 @@ public class PlaceholderFragmentInter extends Fragment {
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
 
-        binding = FragmentPlansBeginerBinding.inflate(inflater, container, false);
+        binding = FragmentPlansInterBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.sectionLabel;
-        pageViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 

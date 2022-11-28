@@ -13,46 +13,51 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StayActive">
         <activity
-            android:name=".PlansAdv"
+            android:name=".best"
+            android:exported="false"
+            android:label="@string/title_activity_best"
+            android:theme="@style/Theme.StayActive.NoActionBar" />
+        <activity
+            android:name="Plans.PlansAdv"
             android:exported="false"
             android:label="@string/title_activity_plans_adv"
             android:theme="@style/Theme.StayActive.NoActionBar" />
         <activity
-            android:name=".PlansInter"
+            android:name="Plans.PlansInter"
             android:exported="false"
             android:label="@string/title_activity_plans_inter"
             android:theme="@style/Theme.StayActive.NoActionBar" />
         <activity
-            android:name=".PlansBeginer"
+            android:name="Plans.PlansBeginer"
             android:exported="false"
             android:label="@string/title_activity_plans_beginer"
             android:theme="@style/Theme.StayActive.NoActionBar" />
         <activity
-            android:name=".Legs"
+            android:name="Exc.Legs"
             android:exported="false"
             android:label="@string/legs_name" />
         <activity
-            android:name=".Abdomen"
+            android:name="Exc.Abdomen"
             android:exported="false"
             android:label="@string/abdomen_name" />
         <activity
-            android:name=".Triceps"
+            android:name="Exc.Triceps"
             android:exported="false"
             android:label="@string/triceps_name" />
         <activity
-            android:name=".Biceps"
+            android:name="Exc.Biceps"
             android:exported="false"
             android:label="@string/biceps_name" />
         <activity
-            android:name=".Arms"
+            android:name="Exc.Arms"
             android:exported="false"
             android:label="@string/arms_name" />
         <activity
-            android:name=".Back"
+            android:name="Exc.Back"
             android:exported="false"
             android:label="@string/back_name" />
         <activity
-            android:name=".Chest"
+            android:name="Exc.Chest"
             android:exported="false"
             android:label="@string/chest_name" />
         <activity

@@ -9,9 +9,9 @@ import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 
-import pl.gda.wsb.stayactive.PlansAdv;
-import pl.gda.wsb.stayactive.PlansBeginer;
-import pl.gda.wsb.stayactive.PlansInter;
+import Plans.PlansAdv;
+import Plans.PlansBeginer;
+import Plans.PlansInter;
 import pl.gda.wsb.stayactive.R;
 
 

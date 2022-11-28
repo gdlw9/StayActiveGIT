@@ -9,6 +9,8 @@
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/drawable/sn.xml" value="0.14166666666666666" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/activity_abdomen.xml" value="0.14673913043478262" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/activity_back.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/activity_best.xml" value="0.18342391304347827" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/activity_bests.xml" value="0.264" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/activity_biceps.xml" value="0.1461499493414387" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/activity_plan_a.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/activity_plans_adv.xml" value="0.24139492753623187" />
@@ -18,8 +20,17 @@
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/activity_plans_sr.xml" value="0.24139492753623187" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/activity_plans_zaaw.xml" value="0.24139492753623187" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/activity_triceps.xml" value="0.14990942028985507" />
-        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_bests.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_abdomen_b.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_arms_b.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_back_b.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_best.xml" value="0.18342391304347827" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_bests.xml" value="0.1" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_bests2.xml" value="0.15677083333333333" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_biceps_b.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_body.xml" value="0.159375" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_chest_b.xml" value="0.19519927536231885" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_exc.xml" value="0.2" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_legs_b.xml" value="0.19519927536231885" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_plan.xml" value="0.15052083333333333" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_plan_b.xml" value="0.16458333333333333" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_plan_i.xml" value="0.16458333333333333" />
@@ -34,6 +45,7 @@
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_plans_inter.xml" value="0.1421875" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_plans_inter_d1.xml" value="0.16458333333333333" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_plans_inter_d3.xml" value="0.16458333333333333" />
+        <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/fragment_triceps_b.xml" value="0.19519927536231885" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/item_desing.xml" value="0.20871327254305977" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/layout/plansitem_desing.xml" value="0.5027422303473492" />
         <entry key="..\:/Users/godle/AndroidStudioProjects/StayActive/app/src/main/res/menu/bottom_nav_menu.xml" value="0.24739583333333334" />

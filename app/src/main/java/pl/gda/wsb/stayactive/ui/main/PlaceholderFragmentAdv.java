@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import pl.gda.wsb.stayactive.databinding.FragmentPlansAdvBinding;
 import pl.gda.wsb.stayactive.databinding.FragmentPlansBeginerBinding;
 
 /**
@@ -22,7 +23,7 @@ public class PlaceholderFragmentAdv extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
 
     private PageViewModel pageViewModel;
-    private FragmentPlansBeginerBinding binding;
+    private FragmentPlansAdvBinding binding;
 
     public static PlaceholderFragmentAdv newInstance(int index) {
         PlaceholderFragmentAdv fragment = new PlaceholderFragmentAdv();
@@ -48,16 +49,10 @@ public class PlaceholderFragmentAdv extends Fragment {
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
 
-        binding = FragmentPlansBeginerBinding.inflate(inflater, container, false);
+        binding = FragmentPlansAdvBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.sectionLabel;
-        pageViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 
