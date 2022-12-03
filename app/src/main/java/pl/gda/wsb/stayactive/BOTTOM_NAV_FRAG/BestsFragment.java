@@ -28,7 +28,8 @@ public class BestsFragment extends Fragment {
 
         binding = FragmentBestsBinding.inflate(getLayoutInflater());
         ViewPager viewPager = (ViewPager)v.findViewById(R.id.view_pager);
-        viewPager.setAdapter(new SectionsPagerAdapterBests(getContext(),getParentFragmentManager()));
+        viewPager.setOffscreenPageLimit(7);
+        viewPager.setAdapter(new SectionsPagerAdapterBests(getContext(),getChildFragmentManager()));
         TabLayout tabs = (TabLayout) v.findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
 

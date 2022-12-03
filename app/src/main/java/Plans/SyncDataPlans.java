@@ -59,12 +59,13 @@ public class SyncDataPlans extends AsyncTask<String,String,String> implements Re
         arrayList=new ArrayList<>();
     }
 
-    String msg = "Internet/DB_Credentials/Windows_FireWall_TurnOn Error, " +
-            "See Android Monitor in the bottom for details.";
 
 
     @Override
     protected String doInBackground(String... strings) {
+        String msg = "Internet/DB_Credentials/Windows_FireWall_TurnOn Error, " +
+                "See Android Monitor in the bottom for details.";
+
         try
         {
             Connection conn=connectionClass.conclass();
@@ -73,8 +74,6 @@ public class SyncDataPlans extends AsyncTask<String,String,String> implements Re
                 String query="Select * FROM "+table+" WHERE dzien = "+day;
                 Statement stmt = conn.createStatement();
                 ResultSet rs=stmt.executeQuery(query);
-
-
 
                 if(rs!=null) {
                     while(rs.next())

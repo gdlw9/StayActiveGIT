@@ -37,6 +37,7 @@
     <string name="Atab_text_2">Dzień 2 (PULL)</string>
     <string name="Atab_text_3">Dzień 3 (PUSH)</string>
     <string name="Atab_text_4">Dzień 4 (PULL)</string>
+
     <string name="Bests_text_1">Klatka piersiowa</string>
     <string name="Bests_text_2">Plecy</string>
     <string name="Bests_text_3">Barki</string>
@@ -44,6 +45,7 @@
     <string name="Bests_text_5">Triceps</string>
     <string name="Bests_text_6">Brzuch</string>
     <string name="Bests_text_7">Nogi</string>
+
     <string name="title_activity_plan_i">PlanI</string>
     <string name="title_activity_plan">PlanA</string>
     <string name="title_activity_plans_beginer">PlansBeginer</string>
@@ -52,4 +54,11 @@
     <string name="trenig_push_pull"><![CDATA[Trenig Push&Pull]]></string>
     <string name="title_activity_bests">bests</string>
     <string name="title_activity_best">best</string>
+
+    <string-array name="numbers">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Five</item>
+    </string-array>
 </resources>

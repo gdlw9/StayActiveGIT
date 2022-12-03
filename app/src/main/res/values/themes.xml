@@ -22,4 +22,8 @@
     <style name="Theme.StayActive.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.StayActive.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Button.White" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">#54ADCF</item>
+    </style>
 </resources>

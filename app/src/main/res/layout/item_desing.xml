@@ -16,8 +16,8 @@
             android:text="Title"
             android:id="@+id/tv_title"
             android:background="@drawable/sn"
-            android:padding="15dp"
-            android:textSize="28sp"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_23sdp"
             android:textAlignment="center"
             android:textStyle="bold"
             android:fontFamily="@font/tommyt"
@@ -28,7 +28,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/_1sdp"
             android:id="@+id/rl_title_line"
             android:background="@color/underline_col">
 
@@ -54,8 +54,8 @@
             android:text="tv_working_mscl"
             android:id="@+id/tv_w_mscl"
             android:background="@drawable/grad"
-            android:padding="15dp"
-            android:textSize="22sp"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_17sdp"
             android:textAlignment="center"
             android:textStyle="bold"
             android:fontFamily="@font/tommyt"
@@ -72,8 +72,8 @@
             android:text="description"
             android:id="@+id/tv_desc"
             android:background="@drawable/grad"
-            android:padding="15dp"
-            android:textSize="20sp"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_15sdp"
             android:textStyle="bold"
             android:fontFamily="@font/tommyt"
             android:textColor="@color/white">
@@ -82,7 +82,7 @@
         </TextView>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/_1sdp"
             android:id="@+id/rl_desc_line"
             android:background="@color/underline_col">
 
