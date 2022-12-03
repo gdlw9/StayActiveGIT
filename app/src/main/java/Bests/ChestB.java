@@ -25,7 +25,7 @@ public class ChestB extends Fragment  {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_chest_b, container, false);
-        Spinner spinner = new Spinner("abdomenB",getActivity(),v);
+        Spinner spinner = new Spinner("chestB",getActivity(),v);
         return v;
     }
 

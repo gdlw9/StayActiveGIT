@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -44,6 +45,7 @@ public class Spinner implements AdapterView.OnItemSelectedListener, View.OnClick
 
 
 
+
     public Spinner(String table, Activity activity, View v) {
 //DEFINE CONSTRUCTOR
         this.table=table;
@@ -59,12 +61,9 @@ public class Spinner implements AdapterView.OnItemSelectedListener, View.OnClick
         this.spinner=v.findViewById(R.id.spinner);
         this.datePick=v.findViewById(R.id.dp);
 
-
-
 // SPINNER
         FillSpinner();
         this.spinner.setOnItemSelectedListener(this);
-
 
 //CALENDAR
         this.calendar=Calendar.getInstance();
@@ -142,18 +141,14 @@ public class Spinner implements AdapterView.OnItemSelectedListener, View.OnClick
         switch(v.getId()) {
             case R.id.update:
                 Connection conn = connectionClass.conclass();
-                if (best.getText().toString().matches("") || reps.getText().toString().matches("") || datePick.getText().toString().matches(""))
-                    Toast.makeText(context, "Uzupełnij wszystkie pola!", Toast.LENGTH_SHORT).show();
+                if (reps.getText().toString().matches("") || datePick.getText().toString().matches(""))
+                    Toast.makeText(context, "Pola: 'Powtórzenia' i 'Data' są wymagane!", Toast.LENGTH_LONG).show();
                 else {
                     try {
 
                         String query = "UPDATE " + table + " SET best = '" + best.getText().toString() + "' , powtorzenia = '" + reps.getText().toString() + "' , data = '" + datePick.getText().toString() + "' WHERE cwi='" + exc + "'";
                         Statement stmt = conn.createStatement();
-
-
                         stmt.executeQuery(query);
-
-
                     } catch (Exception e) {
                         Log.e("Error", e.getMessage());
                     }
@@ -169,6 +164,7 @@ public class Spinner implements AdapterView.OnItemSelectedListener, View.OnClick
                         calendar.get(Calendar.DAY_OF_MONTH))
                          .show();
                 break;
+
         }
 
     }
@@ -182,5 +178,7 @@ public class Spinner implements AdapterView.OnItemSelectedListener, View.OnClick
 
         updateCalendar();
     }
+
+
 
 }
