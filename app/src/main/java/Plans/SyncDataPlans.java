@@ -1,11 +1,13 @@
 package Plans;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 
 import android.os.AsyncTask;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -28,7 +30,7 @@ import Exc.Legs;
 import pl.gda.wsb.stayactive.R;
 import Exc.Triceps;
 
-public class SyncDataPlans extends AsyncTask<String,String,String> implements RecyclerViewInterface
+public class SyncDataPlans extends AsyncTask<String,Void,String> implements RecyclerViewInterface
 {
     private ArrayList<PlansModelClass> arrayList;
     private PlansAdapter adapter;
@@ -40,6 +42,7 @@ public class SyncDataPlans extends AsyncTask<String,String,String> implements Re
     Context context;
     Activity activity;
 
+    private String msg = "Internet Connection Error";
 
 
 
@@ -57,15 +60,15 @@ public class SyncDataPlans extends AsyncTask<String,String,String> implements Re
         recyclerView.setLayoutManager(mLayoutManager);
         connectionClass=new ConSQL();
         arrayList=new ArrayList<>();
+
+
     }
+
 
 
 
     @Override
     protected String doInBackground(String... strings) {
-        String msg = "Internet/DB_Credentials/Windows_FireWall_TurnOn Error, " +
-                "See Android Monitor in the bottom for details.";
-
         try
         {
             Connection conn=connectionClass.conclass();
@@ -91,25 +94,26 @@ public class SyncDataPlans extends AsyncTask<String,String,String> implements Re
 
 
                     }
-                    msg="Found";
+                    msg="Success";
                     success=true;
                 }else{
-                    msg="no data found";
+                    msg="No data found";
                     success=false;
                 }
             }
         }
         catch (Exception e){
             e.printStackTrace();
-            Writer writer = new StringWriter();
-            e.printStackTrace(new PrintWriter(writer));
-            msg = writer.toString();
-            success=false;
+
         }
         return msg;
     }
+
+
+
     protected void onPostExecute(String msg)
     {
+
         if(success) {
             adapter=new PlansAdapter(arrayList,context,this);
             recyclerView.setAdapter(adapter);

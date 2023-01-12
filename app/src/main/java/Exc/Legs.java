@@ -12,9 +12,9 @@ public class Legs extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_legs);
+        setContentView(R.layout.activity_exc_list);
 
-        SyncDataExc orderData = new SyncDataExc("legs",this,this);
+        SyncDataExc orderData = new SyncDataExc("legs",this);
         orderData.execute("");
 
     }

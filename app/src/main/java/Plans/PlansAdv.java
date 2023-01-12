@@ -8,7 +8,7 @@ import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
 import pl.gda.wsb.stayactive.databinding.ActivityPlansAdvBinding;
-import pl.gda.wsb.stayactive.ui.main.SectionsPagerAdapter4DAYS;
+import pl.gda.wsb.stayactive.ui.main.SectionsPagerAdapter4DaysAdv;
 
 public class PlansAdv extends AppCompatActivity {
 
@@ -21,7 +21,7 @@ public class PlansAdv extends AppCompatActivity {
         binding = ActivityPlansAdvBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        SectionsPagerAdapter4DAYS sectionsPagerAdapter = new SectionsPagerAdapter4DAYS(this, getSupportFragmentManager());
+        SectionsPagerAdapter4DaysAdv sectionsPagerAdapter = new SectionsPagerAdapter4DaysAdv(this, getSupportFragmentManager());
         ViewPager viewPager = binding.viewPager;
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = binding.tabs;

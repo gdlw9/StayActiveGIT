@@ -7,7 +7,7 @@
     <string name="arms_name"> BARKI - lista ćwiczeń</string>
     <string name="back_name"> PLECY - lista ćwiczeń</string>
     <string name="chest_name"> KLATKA PIERSIOWA - lista ćwiczeń</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open_a_chest_exercises">Open a chest exercises</string>
     <string name="open_an_arms_exercises">Open an arms exercises</string>
@@ -54,11 +54,47 @@
     <string name="trenig_push_pull"><![CDATA[Trenig Push&Pull]]></string>
     <string name="title_activity_bests">bests</string>
     <string name="title_activity_best">best</string>
+    <string name="weightimg">weightIMG</string>
+    <string name="weight">Waga</string>
+    <string name="hintWEIGHT">...</string>
+    <string name="heightimg">heightIMG</string>
+    <string name="height">Wzrost</string>
+    <string name="hintHEIGHT">...</string>
+    <string name="armimg">armIMG</string>
+    <string name="arm">Obwód ramienia</string>
+    <string name="armHINT">...</string>
+    <string name="chestimg">chestIMG</string>
+    <string name="chest">Obwód klatki piersiowej</string>
+    <string name="chestHINT">...</string>
+    <string name="stomachIMG">Obwód talii / brczucha</string>
+    <string name="stomachHINT">...</string>
+    <string name="hipimg">hipIMG</string>
+    <string name="hip">Obwód biodra</string>
+    <string name="hipHINT">...</string>
+    <string name="legimg">legIMG</string>
+    <string name="leg">Obwód uda</string>
+    <string name="legHINT">...</string>
+    <string name="calvimg">calvIMG</string>
+    <string name="calv">Obwód łydki</string>
+    <string name="calvHINT">...</string>
+    <string name="bodybtn">✓</string>
+    <string name="ciezar">Ciężar (KG):</string>
+    <string name="obciazenie">Podaj obciążenie</string>
+    <string name="powtorzenia">Powtórzenia:</string>
+    <string name="iloscpowt">Podaj ilość powtórzeń</string>
+    <string name="data">Data:</string>
+    <string name="wybierz_date">Wybierz datę</string>
+    <string name="update">aktualizuj</string>
+    <string name="powtorzenia_czas">Powtórzenia / Czas</string>
+    <string name="ilosc_powt_czas">Podaj ilość powtórzeń / czas</string>
+    <string name="test">ABccddeeeffgg</string>
+    <string name="title_RV">Title</string>
+    <string name="instructionimg">instructionIMG</string>
+    <string name="tv_working_mscl">tv_working_mscl</string>
+    <string name="description">description</string>
+    <string name="kg">KG</string>
+    <string name="cm">CM</string>
+    <string name="title_activity_do_usuniecia">doUSUNIECIA</string>
 
-    <string-array name="numbers">
-        <item>One</item>
-        <item>Two</item>
-        <item>Three</item>
-        <item>Five</item>
-    </string-array>
+
 </resources>

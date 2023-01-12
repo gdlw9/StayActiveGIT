@@ -28,7 +28,7 @@ public class PlansAdvD3 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_plans_adv_d3, container, false);
+        View v = inflater.inflate(R.layout.fragment_plans_adv_d, container, false);
 
         SyncDataPlans orderData = new SyncDataPlans(
                 "zaaw","3",getActivity(),v);

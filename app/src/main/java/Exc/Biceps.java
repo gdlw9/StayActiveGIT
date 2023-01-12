@@ -12,9 +12,9 @@ public class Biceps extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_biceps);
+        setContentView(R.layout.activity_exc_list);
 
-        SyncDataExc orderData = new SyncDataExc("biceps",this,this);
+        SyncDataExc orderData = new SyncDataExc("biceps",this);
         orderData.execute("");
 
     }

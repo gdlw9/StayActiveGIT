@@ -12,9 +12,9 @@ public class Triceps extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_triceps);
+        setContentView(R.layout.activity_exc_list);
 
-        SyncDataExc orderData = new SyncDataExc("triceps",this,this);
+        SyncDataExc orderData = new SyncDataExc("triceps",this);
         orderData.execute("");
 
     }

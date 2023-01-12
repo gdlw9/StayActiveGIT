@@ -23,7 +23,7 @@ public class PlansInterD3 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v =inflater.inflate(R.layout.fragment_plans_inter_d3, container, false);
+        View v =inflater.inflate(R.layout.fragment_plans_inter_d, container, false);
 
         SyncDataPlans orderData = new SyncDataPlans(
                 "sred","3",getActivity(),v);

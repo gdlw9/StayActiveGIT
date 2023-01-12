@@ -23,7 +23,7 @@ public class PlansBeginerD3 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_plans_beginer_d3, container, false);
+        View v = inflater.inflate(R.layout.fragment_plans_beginer_d, container, false);
 
         SyncDataPlans orderData = new SyncDataPlans(
                 "pocz","3",getActivity(),v);

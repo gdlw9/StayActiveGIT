@@ -7,10 +7,6 @@ public class PlansModelClass {
         return mscl;
     }
 
-    public void setMscl(String mscl) {
-        this.mscl = mscl;
-    }
-
     public String getExc() {
         return exc;
     }

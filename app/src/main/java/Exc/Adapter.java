@@ -42,12 +42,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         ViewHolder viewHolder = (ViewHolder) holder;
         ModelClass modelClass = arrayList.get(position);
-
         holder.tv_title.setText(modelClass.getExercise());
         Glide.with(holder.iv.getContext()).load(modelClass.getImage()).into(holder.iv);
         holder.tv_working_muscles.setText(modelClass.getWorking_muscles());
         holder.tv_desc.setText(modelClass.getDescription());
-
 
         boolean isVisible = arrayList.get(position).isVisible();
         holder.iv.setVisibility(isVisible ? View.VISIBLE : View.GONE);

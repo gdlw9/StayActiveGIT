@@ -11,10 +11,10 @@ public class Arms extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arms);
+        setContentView(R.layout.activity_exc_list);
 
 
-        SyncDataExc orderData = new SyncDataExc("arms",this,this);
+        SyncDataExc orderData = new SyncDataExc("arms",this);
         orderData.execute("");
 
     }

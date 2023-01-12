@@ -8,22 +8,23 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import Plans.PlansBeginerD1;
-import Plans.PlansBeginerD2;
-import Plans.PlansBeginerD3;
+import Plans.PlansAdvD1;
+import Plans.PlansAdvD2;
+import Plans.PlansAdvD3;
+import Plans.PlansAdvD4;
 import pl.gda.wsb.stayactive.R;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
  * one of the sections/tabs/pages.
  */
-public class SectionsPagerAdapter3DaysBeginer extends FragmentPagerAdapter {
+public class SectionsPagerAdapter4DaysAdv extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2,R.string.tab_text_3};
+    private static final int[] TAB_TITLES = new int[]{R.string.Atab_text_1, R.string.Atab_text_2,R.string.Atab_text_3,R.string.Atab_text_4};
     private final Context mContext;
 
-    public SectionsPagerAdapter3DaysBeginer(Context context, FragmentManager fm) {
+    public SectionsPagerAdapter4DaysAdv(Context context, FragmentManager fm) {
         super(fm);
         mContext = context;
     }
@@ -34,13 +35,16 @@ public class SectionsPagerAdapter3DaysBeginer extends FragmentPagerAdapter {
         switch(position)
         {
             case 0:
-                fragment = PlansBeginerD1.newInstance();
+                fragment = PlansAdvD1.newInstance();
                 break;
             case 1:
-                fragment = PlansBeginerD2.newInstance();
+                fragment = PlansAdvD2.newInstance();
                 break;
             case 2:
-                fragment = PlansBeginerD3.newInstance();
+                fragment = PlansAdvD3.newInstance();
+                break;
+            case 3:
+                fragment = PlansAdvD4.newInstance();
                 break;
             default:
                 break;
@@ -56,7 +60,6 @@ public class SectionsPagerAdapter3DaysBeginer extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-
-        return 3;
+        return 4;
     }
 }

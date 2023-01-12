@@ -4,29 +4,25 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import pl.gda.wsb.stayactive.databinding.FragmentPlansBeginerBinding;
 import pl.gda.wsb.stayactive.databinding.FragmentPlansInterBinding;
 
 /**
  * A placeholder fragment containing a simple view.
  */
-public class PlaceholderFragmentInter extends Fragment {
+public class PlaceholderFragment3DaysInter extends Fragment {
 
     private static final String ARG_SECTION_NUMBER = "section_number";
 
     private PageViewModel pageViewModel;
     private FragmentPlansInterBinding binding;
 
-    public static PlaceholderFragmentInter newInstance(int index) {
-        PlaceholderFragmentInter fragment = new PlaceholderFragmentInter();
+    public static PlaceholderFragment3DaysInter newInstance(int index) {
+        PlaceholderFragment3DaysInter fragment = new PlaceholderFragment3DaysInter();
         Bundle bundle = new Bundle();
         bundle.putInt(ARG_SECTION_NUMBER, index);
         fragment.setArguments(bundle);

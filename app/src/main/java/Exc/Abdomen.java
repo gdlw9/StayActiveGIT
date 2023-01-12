@@ -11,9 +11,9 @@ public class Abdomen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_abdomen);
+        setContentView(R.layout.activity_exc_list);
 
-        SyncDataExc orderData = new SyncDataExc("abdomen",this,this);
+        SyncDataExc orderData = new SyncDataExc("abdomen",this);
         orderData.execute("");
 
     }

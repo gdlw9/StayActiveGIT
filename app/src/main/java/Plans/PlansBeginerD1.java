@@ -24,11 +24,11 @@ public class PlansBeginerD1 extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_plans_beginer_d1, container, false);
+        View v = inflater.inflate(R.layout.fragment_plans_beginer_d, container, false);
 
         SyncDataPlans orderData = new SyncDataPlans(
                 "pocz","1",getActivity(),v);
-        orderData.execute("");
+        orderData.execute();
 
         return v;
     }

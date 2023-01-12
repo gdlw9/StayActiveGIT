@@ -1,15 +1,794 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".BOTTOM_NAV_FRAG.BodyFragment">
+    android:background="@drawable/sn">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="146dp"
-        android:layout_height="155dp"
-        android:src="@drawable/bar" />
-</FrameLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".BOTTOM_NAV_FRAG.BodyFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="7dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/weight"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/weightimg">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/tommyt"
+                android:text="@string/weight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:hint="@string/hintWEIGHT"
+                android:textColor="#CFBDBD"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="numberDecimal"
+                >
+
+            </EditText>
+                <TextView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tommyt"
+                    android:text="@string/kg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnweight"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:backgroundTint="#34838E"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/bodybtn"
+            android:textColor="@color/white">
+
+        </Button>
+
+
+    </LinearLayout>  <!-- waga -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="7dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/height"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/heightimg">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/tommyt"
+                android:text="@string/height"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:hint="@string/hintHEIGHT"
+                android:textColor="#CFBDBD"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="numberDecimal">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="@dimen/_21sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tommyt"
+                android:text="@string/cm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnheight"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#34838E"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:text="@string/bodybtn">
+
+        </Button>
+    </LinearLayout>  <!-- wzrost -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="7dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/biceps"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/armimg">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/tommyt"
+                android:text="@string/arm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <EditText
+                android:id="@+id/arm"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:hint="@string/armHINT"
+                android:textColor="#CFBDBD"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="numberDecimal">
+
+            </EditText>
+             <TextView
+                android:layout_width="@dimen/_21sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tommyt"
+                android:text="@string/cm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnarm"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#34838E"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/bodybtn"
+            android:textColor="@color/white">
+
+        </Button>
+
+    </LinearLayout>  <!-- ramie -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="7dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/chest"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/chestimg">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/tommyt"
+                android:text="@string/chest"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <EditText
+                android:id="@+id/chest"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:hint="@string/chestHINT"
+                android:textColor="#CFBDBD"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="numberDecimal">
+
+            </EditText>
+             <TextView
+                android:layout_width="@dimen/_21sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tommyt"
+                android:text="@string/cm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btnchest"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#34838E"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:text="@string/bodybtn"
+            >
+
+        </Button>
+
+    </LinearLayout>  <!-- klatka -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="7dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/stomach"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/stomachIMG">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/tommyt"
+                android:text="@string/stomachIMG"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <EditText
+                android:id="@+id/stomach"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:hint="@string/stomachHINT"
+                android:textColor="#CFBDBD"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="numberDecimal">
+
+            </EditText>
+                <TextView
+                    android:layout_width="@dimen/_21sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tommyt"
+                    android:text="@string/cm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp">
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btnstomach"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#34838E"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:text="@string/bodybtn">
+
+        </Button>
+
+
+    </LinearLayout>  <!-- brzuch -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="7dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/hips"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/hipimg">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/tommyt"
+                android:text="@string/hip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <EditText
+                android:id="@+id/hips"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:hint="@string/hipHINT"
+                android:textColor="#CFBDBD"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="numberDecimal">
+
+            </EditText>
+                <TextView
+                    android:layout_width="@dimen/_21sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tommyt"
+                    android:text="@string/cm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp">
+
+                </TextView>
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Space
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnhips"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#34838E"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:text="@string/bodybtn">
+
+        </Button>
+
+    </LinearLayout>  <!-- biodra -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="7dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/noga"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/legimg">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/tommyt"
+                android:text="@string/leg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <EditText
+                android:id="@+id/leg"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:hint="@string/legHINT"
+                android:textColor="#CFBDBD"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="numberDecimal">
+
+            </EditText>
+                <TextView
+                    android:layout_width="@dimen/_21sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tommyt"
+                    android:text="@string/cm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnleg"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#34838E"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:text="@string/bodybtn">
+
+        </Button>
+    </LinearLayout>  <!-- udo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="7dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/lyda"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/calvimg">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/tommyt"
+                android:text="@string/calv"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <EditText
+                android:id="@+id/calv"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:hint="@string/calvHINT"
+                android:textColor="#CFBDBD"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="numberDecimal">
+
+            </EditText>
+                <TextView
+                    android:layout_width="@dimen/_21sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tommyt"
+                    android:text="@string/cm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btncalv"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#34838E"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:text="@string/bodybtn">
+
+        </Button>
+    </LinearLayout>  <!-- lydka -->
+
+</LinearLayout>
+
+</ScrollView>
+

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Context;
 
+import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
 
@@ -26,6 +27,7 @@ import java.util.Calendar;
 import java.util.Locale;
 
 
+import Exc.Adapter;
 import pl.gda.wsb.stayactive.ConSQL;
 import pl.gda.wsb.stayactive.R;
 
@@ -42,6 +44,10 @@ public class Spinner implements AdapterView.OnItemSelectedListener, View.OnClick
     private Button btnupdate;
     private Calendar calendar;
     private DatePickerDialog.OnDateSetListener date;
+
+
+
+    private ArrayList<String> data= new ArrayList<>();
 
 
 
@@ -109,7 +115,7 @@ public class Spinner implements AdapterView.OnItemSelectedListener, View.OnClick
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-         this.exc= parent.getItemAtPosition(position).toString();
+        this.exc= parent.getItemAtPosition(position).toString();
         Connection conn=connectionClass.conclass();
         try {
             if (conn != null) {
@@ -145,8 +151,10 @@ public class Spinner implements AdapterView.OnItemSelectedListener, View.OnClick
                     Toast.makeText(context, "Pola: 'Powtórzenia' i 'Data' są wymagane!", Toast.LENGTH_LONG).show();
                 else {
                     try {
-
-                        String query = "UPDATE " + table + " SET best = '" + best.getText().toString() + "' , powtorzenia = '" + reps.getText().toString() + "' , data = '" + datePick.getText().toString() + "' WHERE cwi='" + exc + "'";
+                        String query = "UPDATE " + table + " SET best = '"
+                                + best.getText().toString() + "' , powtorzenia = '"
+                                + reps.getText().toString() + "' , data = '"
+                                + datePick.getText().toString() + "' WHERE cwi='" + exc + "'";
                         Statement stmt = conn.createStatement();
                         stmt.executeQuery(query);
                     } catch (Exception e) {
@@ -178,6 +186,8 @@ public class Spinner implements AdapterView.OnItemSelectedListener, View.OnClick
 
         updateCalendar();
     }
+
+
 
 
 

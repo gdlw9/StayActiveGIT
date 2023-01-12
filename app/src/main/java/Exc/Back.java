@@ -11,9 +11,9 @@ public class Back extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_back);
+        setContentView(R.layout.activity_exc_list);
 
-        SyncDataExc orderData = new SyncDataExc("back", this, this);
+        SyncDataExc orderData = new SyncDataExc("back", this);
         orderData.execute("");
 
     }

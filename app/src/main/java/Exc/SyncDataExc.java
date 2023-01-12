@@ -1,6 +1,7 @@
 package Exc;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 
@@ -18,7 +19,7 @@ import java.util.ArrayList;
 import pl.gda.wsb.stayactive.ConSQL;
 import pl.gda.wsb.stayactive.R;
 
-public class SyncDataExc extends AsyncTask<String,String,String>
+    public class SyncDataExc extends AsyncTask<String,String,String>
 {
     private ArrayList<ModelClass> arrayList;
     private Adapter adapter;
@@ -29,14 +30,15 @@ public class SyncDataExc extends AsyncTask<String,String,String>
     private String table;
     Context context;
     Activity activity;
+    private  String msg = "Internet Connection Error";
 
 
 
-
-    public SyncDataExc(String table,Context context, Activity activity) {
+    public SyncDataExc(String table, Activity activity) {
         this.table = table;
-        this.context=context;
         this.activity=activity;
+        this.context=activity.getApplicationContext();
+
 
 
         recyclerView=activity.findViewById(R.id.recycle_view);
@@ -45,11 +47,13 @@ public class SyncDataExc extends AsyncTask<String,String,String>
         mLayoutManager=new LinearLayoutManager(context);
         recyclerView.setLayoutManager(mLayoutManager);
         connectionClass=new ConSQL();
-        arrayList=new ArrayList<ModelClass>();
+        arrayList=new ArrayList<>();
     }
 
-    String msg = "Internet/DB_Credentials/Windows_FireWall_TurnOn Error, " +
-            "See Android Monitor in the bottom for details.";
+
+
+
+
 
 
     @Override
@@ -77,8 +81,6 @@ public class SyncDataExc extends AsyncTask<String,String,String>
                         catch (Exception e) {
                             e.printStackTrace();
                         }
-
-
                     }
                     msg="Found";
                     success=true;
@@ -97,12 +99,10 @@ public class SyncDataExc extends AsyncTask<String,String,String>
         }
         return msg;
     }
-    protected void onPostExecute(String msg)
-    {
+    protected void onPostExecute(String msg) {
         if(success) {
             adapter=new Adapter(arrayList,context);
             recyclerView.setAdapter(adapter);
         }
-
     }
 }
