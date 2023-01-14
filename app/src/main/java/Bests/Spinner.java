@@ -81,8 +81,8 @@ public class Spinner implements AdapterView.OnItemSelectedListener, View.OnClick
     }
 
     public void updateCalendar(){
-        String Format="dd/MM/yyyy";
-        SimpleDateFormat sdf = new SimpleDateFormat(Format, Locale.GERMAN);
+        String Format="MM/dd/yyyy";
+        SimpleDateFormat sdf = new SimpleDateFormat(Format, Locale.US);
         this.datePick.setText(sdf.format(this.calendar.getTime()));
     }
 
